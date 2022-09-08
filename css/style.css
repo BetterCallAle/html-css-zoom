@@ -14,11 +14,6 @@ img{
     max-width: 100%;
 }
 
-.container{
-    width:95%;
-    margin:70px auto;
-}
-
 .flex-container{
     display: flex;
     flex-wrap: wrap;
@@ -27,10 +22,21 @@ img{
 .justify-content-btw{
     justify-content: space-between;
 }
+
+.align-content-start{
+    align-content: flex-start;
+}
+
 /* MAIN */
 .wrapper{
     height: 100vh;
     width: 100%;
+}
+
+.container{
+    width: 95%;
+    max-width: 1820px;
+    margin: 60px auto 20px;
 }
 
 .video-call{
@@ -38,14 +44,12 @@ img{
     width: 100%;
     background-color: black;
     overflow-y: auto;
-    /* debug */
-    color: white;
+    position: relative;
 }
 
 /* col */
 .col{
-    width: calc(100% / 7 - 3px);
-    height: 100%;
+    width: calc(100% / 7 - 5px);
 }
 
 .card{
@@ -54,14 +58,30 @@ img{
 }
 
 .nickname{
-    display: inline-block;
     font-size: .8rem;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 8px;
     position: absolute;
     bottom:0;
     left:0;
+}
+
+/* view */
+.view-items{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.view{
+    display: inline-block;
+    font-size: .8rem;
+    color: white;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    padding: 7px;
+    cursor: pointer;
 }
 
 /* toolbar */
