@@ -124,13 +124,34 @@ ul{
 }
 
 .end{
-    background-color: #4a4a4a;
     height: 100%;
     width: 10%;
     text-align: end;
     line-height: 80px;
     color: red;
     cursor: pointer;
+}
+
+/* hover */
+.end:hover{
+    background-color: #4a4a4a;
+}
+
+.card:hover::after{
+    content:"...";
+    display: inline-block;
+    color: white;
+    background-color: rgb(41, 97, 116);
+    padding: 2px 5px;
+    position:absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.toolbar li:hover{
+    transform: scale(1.2);
+    opacity: 70%;
 }
 
 
