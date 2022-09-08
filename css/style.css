@@ -141,7 +141,7 @@ ul{
     content:"...";
     display: inline-block;
     color: white;
-    background-color: rgb(41, 97, 116);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 2px 5px;
     position:absolute;
     top: 0;
