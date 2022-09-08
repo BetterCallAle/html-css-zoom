@@ -14,9 +14,12 @@ img{
     max-width: 100%;
 }
 
+ul{
+    list-style: none;
+}
+
 .flex-container{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .justify-content-btw{
@@ -37,10 +40,11 @@ img{
     width: 95%;
     max-width: 1820px;
     margin: 60px auto 20px;
+    flex-wrap: wrap;
 }
 
 .video-call{
-    height: calc(100% - 100px);
+    height: calc(100% - 90px);
     width: 100%;
     background-color: black;
     overflow-y: auto;
@@ -86,6 +90,47 @@ img{
 
 /* toolbar */
 .toolbar{
-    height: 100px;
+    height: 90px;
     background-color: #222222;
+    color: white;
+    align-items: center;
+    padding-left: 10px;
 }
+
+.toolbar ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px 20px;
+    align-items: center;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.toolbar ul li span{
+    font: .8rem;
+}
+
+.toolbar .icon{
+    font-size: 1.8rem;
+}
+
+.fa-chevron-up{
+    font-size: .5rem;
+}
+
+.share{
+    color: #4bc800;
+}
+
+.end{
+    background-color: #4a4a4a;
+    height: 100%;
+    width: 10%;
+    text-align: end;
+    line-height: 90px;
+    color: red;
+    cursor: pointer;
+}
+
+
