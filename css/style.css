@@ -1,5 +1,31 @@
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* COMMON */
+img{
+    max-width: 100%;
+}
+
+/* MAIN */
+.wrapper{
+    height: 100vh;
+    width: 100%;
+}
+
+.video-call{
+    height: calc(100% - 100px);
+    background-color: black;
+    overflow-y: auto;
+
+    /* debug */
+    color: white;
+}
+
+.toolbar{
+    height: 100px;
+    background-color: #222222;
 }
