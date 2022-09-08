@@ -6,10 +6,27 @@
 }
 
 /* COMMON */
+html{
+    font-family: sans-serif;
+}
+
 img{
     max-width: 100%;
 }
 
+.container{
+    width:95%;
+    margin:70px auto;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-content-btw{
+    justify-content: space-between;
+}
 /* MAIN */
 .wrapper{
     height: 100vh;
@@ -18,13 +35,36 @@ img{
 
 .video-call{
     height: calc(100% - 100px);
+    width: 100%;
     background-color: black;
     overflow-y: auto;
-
     /* debug */
     color: white;
 }
 
+/* col */
+.col{
+    width: calc(100% / 7 - 3px);
+    height: 100%;
+}
+
+.card{
+    position: relative;
+    margin-bottom: .8em;
+}
+
+.nickname{
+    display: inline-block;
+    font-size: .8rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+
+/* toolbar */
 .toolbar{
     height: 100px;
     background-color: #222222;
